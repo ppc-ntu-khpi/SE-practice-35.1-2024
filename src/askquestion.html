@@ -1,10 +1,14 @@
 <html>
+
 <head>
     <link rel="stylesheet" href="style.css">
     <title></title>
 </head>
 
 <body>
+    <div class="music">
+        <img src="images/play.png" id="icon">
+    </div>
     <h2>Що б отримати відповідь, необхідно поставити запитання, вголос або про себе, та натиснути на кулю.</h2>
     <div class="row">
         <img id="ball" alt="Magic 8 Ball" class="ball" onClick="shake()" src="images/8ball.png">
@@ -13,7 +17,12 @@
     </div>
     <a href="index.html"><button>Дізнатися свою долю</button></a>
 
-
+    <audio id="mySong">
+        <source src="music/song.mp3" type="audio/mp3">
+    </audio>
+    
+    <script src="scripts/askquestion.js"></script>
+    <script src="scripts/music.js"></script>
 </body>
+
 </html>
-<script src="scripts/askquestion.js"></script>
