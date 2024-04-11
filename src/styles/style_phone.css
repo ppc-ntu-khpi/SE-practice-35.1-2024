@@ -198,15 +198,15 @@ body {
 	display: flex;
 	justify-content: center;
     align-items: center;
-	width: 40vw;
-	height: 60vw;
+	width: 34vw;
+	height: 52vw;
 	margin: 50px;
 }
 
 #card1 {
 	position: fixed;
 	left: -30px;
-	top: 425px;
+	top: 350px;
 }
 
 #card2 {
@@ -217,7 +217,7 @@ body {
 #card3 {
 	position: fixed;
 	right: -30px;
-	top: 425px;
+	top: 350px;
 }
 
 .tense {
@@ -233,8 +233,8 @@ body {
 .card img {
 	display: flex;
 	position: absolute;
-	width: 38vw;
-	height: 57vw;
+	width: 30vw;
+	height: 45vw;
 	border: 2px solid transparent;
 }
 
@@ -243,8 +243,8 @@ body {
 	justify-content: center;
     align-items: center;
 	position: absolute;
-	width:140px;
-	height: 260px;
+	width: 34vw;
+	height: 52vw;
 	text-align: center;
 	font-size: 12pt;
 	color: rgb(50, 255, 255);
