@@ -200,18 +200,17 @@ body {
 	position: absolute;
 	width:180px;
 	height: 260px;
-	backdrop-filter: blur(2px);
-	-webkit-backdrop-filter: blur(2px);
 	text-align: center;
 	color: rgb(50, 255, 255);
-	background-color: rgba(0, 0, 0, 0.3);
+	animation: current-neon-animation 1.5s infinite alternate,
+			   current-text-neon-animation 1.5s infinite alternate-reverse;
 }
 
 .card-name {
 	position: absolute;
 	bottom: 30px;
 	width: 200px;
-	bottom: -40px;
+	bottom: -55px;
 	font-size: 16pt;
 	text-align: center;
 	color: rgb(50, 255, 255);
@@ -340,6 +339,17 @@ body {
 	100% {
         border-color: rgba(255, 255, 50, 0.7);
 		box-shadow:  0 0 3px 3px rgba(255, 255, 50, 0.5);
+    }
+}
+
+@keyframes current-neon-animation {
+    0% {
+        border-color: rgba(255, 255, 50, 1);
+		box-shadow:  0 0 3px 3px rgba(50, 255, 255, 1);
+    }
+	100% {
+        border-color: rgba(255, 255, 50, 0.7);
+		box-shadow:  0 0 3px 3px rgba(50, 255, 255, 0.5);
     }
 }
 

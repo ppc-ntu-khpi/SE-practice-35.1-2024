@@ -1,11 +1,12 @@
 function checkCards(thisCard) {
 	let bool = false;
 	if (thisCard > 3) {
-		if (device == "desktop") {
+		//if (device == "desktop") {
 			down_button.innerText = "Дізнатися";
 			down_button.onclick = function() {
 				if (bool == false) {
 					description_card1.style.display = "flex";
+					
 					description_card2.style.display = "flex";
 					description_card3.style.display = "flex";
 					bool = true;
@@ -16,8 +17,8 @@ function checkCards(thisCard) {
 					bool = false;
 				}
 			}
-		} else if (device == "phone") {
-		
-		}
+		//} else if (device == "phone") {
+			
+		//}
 	}
 }

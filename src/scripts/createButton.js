@@ -12,6 +12,10 @@ if (device == "desktop") {
 	down_button.innerText = "Розпочати";
 	down_button.onclick = function() {
 		checkIOS();
+		down_button.onclick = function() {
+			return;
+		}
+		down_button.innerText = "Потрясіть телефон тричі";
 	}
 }
 down.appendChild(down_button);

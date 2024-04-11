@@ -23,8 +23,22 @@ const description_card2 = document.getElementById('description-card2');
 const description_card3 = document.getElementById('description-card3');
 
 description_card1.style.display = "none";
+description_card1.style.width = "140px";
+description_card1.style.height = "auto";
+description_card1.style.borderRadius = "5px";
+description_card1.style.background = "rgba(0, 0, 0, 0.5)";
+
 description_card2.style.display = "none";
+description_card2.style.width = "140px";
+description_card2.style.height = "auto";
+description_card2.style.borderRadius = "5px";
+description_card2.style.background = "rgba(0, 0, 0, 0.5)";
+
 description_card3.style.display = "none";
+description_card3.style.width = "140px";
+description_card3.style.height = "auto";
+description_card3.style.borderRadius = "5px";
+description_card3.style.background = "rgba(0, 0, 0, 0.5)";
 
 const chosenCards = [];
 const cardCondition = [];
