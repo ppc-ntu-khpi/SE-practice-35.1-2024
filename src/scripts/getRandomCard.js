@@ -7,7 +7,7 @@ function getRandomCard(thisCard, chosenCards, cardCondition, cards) {
 		randomIndex = Math.floor(Math.random() * cards.length);
 		if (!chosenCards.includes(cards[randomIndex])) {
 			chosenCards.push(cards[randomIndex]);
-			condition = Math.floor(Math.random() * 2);
+			condition = 0/*Math.floor(Math.random() * 2);*/
 			if (condition == 0) {
 				cardCondition.push("normal");
 			} else if (condition == 1) {
@@ -40,14 +40,14 @@ function getRandomCard(thisCard, chosenCards, cardCondition, cards) {
 			case 3: description.innerText = chosenCards[thisCard-1].get_description("future", "normal"); break;
 		}
 	}
-	if (cardCondition[thisCard-1] == "inversed") {
+	/*if (cardCondition[thisCard-1] == "inversed") {
 		cardImg.style.transform = "scale(-1, -1)";
 		switch (thisCard) {
 			case 1: description.innerText = chosenCards[thisCard-1].get_description("past", "inversed"); break;
 			case 2: description.innerText = chosenCards[thisCard-1].get_description("present", "inversed"); break;
 			case 3: description.innerText = chosenCards[thisCard-1].get_description("future", "inversed"); break;
 		}
-	}
+	}*/
 	
 	if (thisCard+1 > 3) {
 		return;

@@ -10,5 +10,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     link.rel = 'stylesheet';
     link.href = 'styles/style_pc.css';
     document.head.appendChild(link);
+	const menu_toggle = document.getElementById('menu-toggle');
+	menu_toggle.remove();
 	device = "desktop";
 }

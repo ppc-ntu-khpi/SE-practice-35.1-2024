@@ -20,23 +20,47 @@ body {
 
 #up {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu-toggle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16pt;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(100, 100, 100, 0.3);
+	width: 200px;
+	height: 50px;
+	margin: 3px;
+	color: rgb(255, 255, 50);
+	border: 2px solid transparent;
+	border-color: rgb(255, 255, 50);
+	animation: text-neon-animation 1.5s infinite alternate,
+			   neon-animation 1.5s infinite alternate;
+}
+
+#menu.hidden {
+	display: none;
 }
 
 #menu {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	font-size: 16pt;
-	width: 800px;
-	height: 50px;
+	z-index: 9999;
+	top: 103px;
 }
 
 .menu {
 	display: flex;
-	flex-direction: row;
-	background-color: rgba(100, 100, 100, 0.3);
+	flex-direction: column;
+	background-color: rgba(100, 100, 100, 0.7);
 	width: 200px;
 	height: 50px;
 	margin: 3px;
@@ -76,6 +100,9 @@ body {
 }
 
 #logo {
+	position: fixed;
+	top: 5px;
+	left: 5px;
 	margin-right: 275px;
 }
 
@@ -191,6 +218,8 @@ body {
 	position: absolute;
 	width: 180px;
 	height: 260px;
+	border: 2px solid transparent;
+	animation: neon-animation 1.5s infinite alternate;
 }
 
 .card-description {
