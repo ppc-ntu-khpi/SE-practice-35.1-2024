@@ -237,6 +237,7 @@ body {
 	width: 90px;
 	height: 130px;
 	border: 2px solid transparent;
+	animation: neon-animation 1.5s infinite alternate;
 }
 
 .card-description {
