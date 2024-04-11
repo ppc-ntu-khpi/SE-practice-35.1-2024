@@ -198,14 +198,14 @@ body {
 	display: flex;
 	justify-content: center;
     align-items: center;
-	width: 200px;
-	height: 300px;
+	width: 40vw;
+	height: 60vw;
 	margin: 50px;
 }
 
 #card1 {
 	position: fixed;
-	left: -50px;
+	left: -30px;
 	top: 425px;
 }
 
@@ -216,13 +216,13 @@ body {
 
 #card3 {
 	position: fixed;
-	right: -50px;
+	right: -30px;
 	top: 425px;
 }
 
 .tense {
 	position: absolute;
-	top: -25px;
+	top: -10vw;
 	width: 200px;
 	font-size: 14pt;
 	text-align: center;
@@ -233,8 +233,8 @@ body {
 .card img {
 	display: flex;
 	position: absolute;
-	width: 180px;
-	height: 260px;
+	width: 38vw;
+	height: 57vw;
 	border: 2px solid transparent;
 }
 
@@ -246,7 +246,7 @@ body {
 	width:140px;
 	height: 260px;
 	text-align: center;
-	font-size: 8pt;
+	font-size: 12pt;
 	color: rgb(50, 255, 255);
 	animation: current-neon-animation 1.5s infinite alternate,
 			   current-text-neon-animation 1.5s infinite alternate-reverse;

@@ -9,19 +9,13 @@ if (device == "desktop") {
 		checkCards(thisCard);
 	}
 } else if (device == "phone") {
-	/*down_button.innerText = "Розпочати";
+	down_button.innerText = "Розпочати";
 	down_button.onclick = function() {
 		checkIOS();
 		down_button.onclick = function() {
 			return;
 		}
 		down_button.innerText = "Потрясіть телефон тричі";
-	}*/
-	down_button.innerHTML = "<p>Отримати картку</p>";
-	down_button.onclick = function() {
-		getRandomCard(thisCard, chosenCards, cardCondition, cards);
-		thisCard++;
-		checkCards(thisCard);
 	}
 }
 down.appendChild(down_button);
