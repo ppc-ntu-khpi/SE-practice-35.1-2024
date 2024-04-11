@@ -1,16 +1,16 @@
-var mySong = document.getElementById("mySong");
-var icon = document.getElementById("icon");
-mySong.volume = 0.2;
-icon.onclick = function () {
-    if (mySong.paused) {
-        mySong.play();
-        icon.src = "images/pause.png";
+const music = document.getElementById("song");
+const music_icon = document.getElementById("music-icon");
+music.volume = 0.2;
+music_icon.onclick = function () {
+    if (music.paused) {
+        music.play();
+        music_icon.src = "images/pause.png";
     } else {
-        mySong.pause();
-        icon.src = "images/play.png";
+        music.pause();
+        music_icon.src = "images/play.png";
     }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    mySong.play();
+    music.play();
 });
