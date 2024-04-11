@@ -4,8 +4,19 @@ body {
 	justify-content: center;
 	align-items: center;
 	max-height: 100vh;
-	background-color: #e6de00;
+	background-image: url("../images/background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-color: #320a62;
 	position: relative;
+}
+
+h2 {
+	font-family: sans-serif;
+	color: white;
+	font-weight: bold;
 }
 
 .main {
@@ -144,6 +155,12 @@ img {
 
 #fortune {
 	text-align: center;
+	font-family: sans-serif;
+	color: white;
+}
+
+#shakePhone {
+	color: white;
 }
 
 .music {
