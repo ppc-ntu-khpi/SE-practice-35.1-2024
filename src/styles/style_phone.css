@@ -206,7 +206,7 @@ body {
 #card1 {
 	position: fixed;
 	left: -5vw;
-	top: 50vh;
+	top: 45vh;
 }
 
 #card2 {
@@ -217,7 +217,7 @@ body {
 #card3 {
 	position: fixed;
 	right: -5vw;
-	top: 50vh;
+	top: 45vh;
 }
 
 .tense {

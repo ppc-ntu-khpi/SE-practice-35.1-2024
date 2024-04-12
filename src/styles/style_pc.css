@@ -182,7 +182,7 @@ body {
 
 .tense {
 	position: absolute;
-	top: -3vw;
+	top: -7vw;
 	width: 13vw;
 	font-size: 20pt;
 	text-align: center;
@@ -204,7 +204,7 @@ body {
 	position: absolute;
 	text-align: center;
 	color: rgb(50, 255, 255);
-	font-size: 16pt;
+	font-size: 12pt;
 	animation: current-neon-animation 1.5s infinite alternate,
 			   current-text-neon-animation 1.5s infinite alternate-reverse;
 }
@@ -215,7 +215,7 @@ body {
 	justify-content: center;
     align-items: center;
 	width: 13vw;
-	bottom: -10vh;
+	bottom: -14vh;
 	font-size: 20pt;
 	text-align: center;
 	color: rgb(50, 255, 255);
@@ -287,7 +287,7 @@ body {
 
 .details p {
 	text-align: center;
-	font-size: 16pt;
+	font-size: 12pt;
 	color: rgb(255, 255, 255);
 	animation: text-neon-animation 1.5s infinite alternate;
 }

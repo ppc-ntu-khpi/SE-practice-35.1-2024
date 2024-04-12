@@ -13,4 +13,5 @@ music_icon.onclick = function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     music.play();
+	music_icon.src = "images/pause.png"
 });
