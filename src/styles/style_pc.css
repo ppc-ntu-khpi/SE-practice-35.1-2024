@@ -118,21 +118,24 @@ body {
     align-items: center;
 }
 
-#main-logo {
-	position: absolute;
-	top: 100px;
-}
-
 #main-logo img{
-	width: 300px;
-	height: 300px;
+	width: 12vw;
+	height: 12vw;
 }
 
 #choice {
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
     align-items: center;
 	position: absolute;
-	top: 450px;
+	top: 12vh;
+	border: 2px solid transparent;
+	border-color: rgb(50, 255, 255);
+	padding: 1vw;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	animation: current-neon-animation 1.5s infinite alternate;
 }
 
 .choice {
@@ -140,11 +143,24 @@ body {
 	justify-content: center;
     align-items: center;
 	background-color: rgba(100, 100, 100, 0.3);
-	width: 200px;
-	height: 50px;
-	margin: 20px;
+	width: 10vw;
+	height: 6vh;
+	margin: 2vh;
 	border: 2px solid transparent;
-	border-color: rgb(255, 255, 50);
+}
+
+#choice-info {
+	text-align: center;
+	animation: current-text-neon-animation 1.5s infinite alternate;
+}
+
+#choice-rules {
+	color: rgb(50, 255, 255);
+}
+
+#choice-authors {
+	color: rgba(50, 255, 255, 0.7);
+	font-size: 9pt;
 }
 
 .choice a{
@@ -152,11 +168,11 @@ body {
 	justify-content: center;
     align-items: center;
 	position: absolute;
-	width: 200px;
-	height: 50px;
+	width: 10vw;
+	height: 6vh;
 	color: rgb(255, 255, 50);
 	text-decoration: none;
-	font-size: 16pt;
+	font-size: 12pt;
 	text-align: center;
 	backdrop-filter: blur(2px);
 	-webkit-backdrop-filter: blur(2px);

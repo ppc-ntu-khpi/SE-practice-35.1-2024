@@ -145,14 +145,9 @@ body {
     align-items: center;
 }
 
-#main-logo {
-	position: absolute;
-	top: 15vh;
-}
-
 #main-logo img{
-	width: 60vw;
-	height: 60vw;
+	width: 20vw;
+	height: 20vw;
 }
 
 #choice {
@@ -162,6 +157,21 @@ body {
 	top: 60vh;
 }
 
+#choice {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+	position: absolute;
+	top: 12vh;
+	border: 2px solid transparent;
+	border-color: rgb(50, 255, 255);
+	padding: 1vw;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	animation: current-neon-animation 1.5s infinite alternate;
+}
+
 .choice {
 	display: flex;
 	justify-content: center;
@@ -169,7 +179,7 @@ body {
 	background-color: rgba(100, 100, 100, 0.3);
 	width: 50vw;
 	height: 12vw;
-	margin: 5vh;
+	margin: 3vh;
 	border: 2px solid transparent;
 	border-color: rgb(255, 255, 50);
 }
@@ -183,7 +193,7 @@ body {
 	height: 12vw;
 	color: rgb(255, 255, 50);
 	text-decoration: none;
-	font-size: 14pt;
+	font-size: 12pt;
 	text-align: center;
 	backdrop-filter: blur(2px);
 	-webkit-backdrop-filter: blur(2px);
@@ -192,6 +202,20 @@ body {
 	background-color: rgba(100, 100, 100, 0.3);
 	animation: neon-animation 1.5s infinite alternate,
 			   text-neon-animation 1.5s infinite alternate-reverse;
+}
+
+#choice-info {
+	text-align: center;
+	animation: current-text-neon-animation 1.5s infinite alternate;
+}
+
+#choice-rules {
+	color: rgb(50, 255, 255);
+}
+
+#choice-authors {
+	color: rgba(50, 255, 255, 0.7);
+	font-size: 10pt;
 }
 
 
