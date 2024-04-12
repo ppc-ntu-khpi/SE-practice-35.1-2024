@@ -13,6 +13,7 @@ body {
 	background-position: center;
 	background-color: #320a62;
 	font-family: Arial;
+	line-height: 1;
 }
 
 
@@ -83,6 +84,7 @@ body {
     justify-content: center;
     align-items: center;
 	width: 50vw;
+	font-family: Arial;
 	height: 12vw;
 }
 
@@ -96,6 +98,7 @@ body {
 	text-decoration: none;
 	backdrop-filter: blur(2px);
 	-webkit-backdrop-filter: blur(2px);
+	font-family: Arial;
 	animation: text-neon-animation 1.5s infinite alternate-reverse;
 }
 
@@ -185,6 +188,7 @@ body {
 	backdrop-filter: blur(2px);
 	-webkit-backdrop-filter: blur(2px);
 	border: 2px solid transparent;
+	font-family: Arial;
 	background-color: rgba(100, 100, 100, 0.3);
 	animation: neon-animation 1.5s infinite alternate,
 			   text-neon-animation 1.5s infinite alternate-reverse;
@@ -227,6 +231,7 @@ body {
 	font-size: 14pt;
 	text-align: center;
 	color: rgb(50, 255, 255);
+	font-family: Arial;
 	animation: current-text-neon-animation 1.5s infinite alternate;
 }
 
@@ -248,6 +253,7 @@ body {
 	text-align: center;
 	font-size: 10pt;
 	color: rgb(50, 255, 255);
+	font-family: Arial;
 	animation: current-neon-animation 1.5s infinite alternate,
 			   current-text-neon-animation 1.5s infinite alternate-reverse;
 }
@@ -259,6 +265,7 @@ body {
 	font-size: 13pt;
 	text-align: center;
 	color: rgb(50, 255, 255);
+	font-family: Arial;
 	animation: current-text-neon-animation 1.5s infinite alternate;
 }
 
@@ -293,6 +300,7 @@ body {
 			   text-neon-animation 1.5s infinite alternate-reverse;
 }
 #down p {
+	font-family: Arial;
 	text-align: center;
 	margin: 3px;
 }
@@ -327,6 +335,7 @@ body {
 }
 
 .details p {
+	font-family: Arial;
 	text-align: center;
 	font-size: 10pt;
 	color: rgb(255, 255, 255);
@@ -344,6 +353,7 @@ body {
 	font-size: 14pt;
 	text-align: center;
 	border: 2px solid transparent;
+	font-family: Arial;
 	background-color: rgba(100, 100, 100, 0.6);
 	animation: neon-animation 1.5s infinite alternate,
 			   text-neon-animation 1.5s infinite alternate-reverse;
@@ -379,6 +389,7 @@ body {
 	border-color: rgb(255, 255, 50);
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
+	font-family: Arial;
 	animation: current-neon-animation 1s infinite alternate,
 			   current-text-neon-animation 1s infinite alternate;
 }
@@ -398,6 +409,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	font-family: Arial;
 }
 
 #fortune.hidden {
