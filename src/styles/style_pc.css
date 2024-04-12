@@ -21,6 +21,8 @@ body {
 #up {
 	display: flex;
 	flex-direction: row;
+	font-size: 16pt;
+	font-family: Arial;
 }
 
 #menu {
@@ -28,17 +30,19 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	font-size: 16pt;
-	width: 800px;
-	height: 50px;
+	width: 60vw;
+	height: 5vh;
+	margin: 3vh;
 }
 
 .menu {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	background-color: rgba(100, 100, 100, 0.3);
-	width: 200px;
-	height: 50px;
+	width: 15vw;
+	height: 8vh;
 	margin: 3px;
 	border: 2px solid transparent;
 	border-color: rgb(255, 255, 50);
@@ -58,39 +62,39 @@ body {
 	display: flex;
     justify-content: center;
     align-items: center;
-	width: 200px;
-	height: 50px;
+	width: 15vw;
+	height: 8vh;
 }
 
 #menu a {
 	display: flex;
     justify-content: center;
     align-items: center;
-	width: 200px;
-	height: 50px;
 	color: rgb(255, 255, 50);
 	text-decoration: none;
+	width: 15vw;
+	height: 8vh;
 	backdrop-filter: blur(2px);
 	-webkit-backdrop-filter: blur(2px);
 	animation: text-neon-animation 1.5s infinite alternate-reverse;
 }
 
 #logo {
-	margin-right: 275px;
+	margin-right: 10vw;
 }
 
 #logo img{
-	width: 75px;
-	height: 75px;
+	width: 5vw;
+	height: 5vw;
 }
 
 #music {
-	margin-left: 275px;
+	margin-left: 10vw;
 }
 
 #music img{
-	width: 75px;
-	height: 75px;
+	width: 5vw;
+	height: 5vw;
 }
 
 
@@ -171,16 +175,16 @@ body {
 	flex-direction: row;
 	justify-content: center;
     align-items: center;
-	width: 200px;
-	height: 300px;
-	margin: 50px;
+	width: 13vw;
+	height: 20vw;
+	margin: 12vh;
 }
 
 .tense {
 	position: absolute;
-	top: -40px;
-	width: 200px;
-	font-size: 16pt;
+	top: -3vw;
+	width: 13vw;
+	font-size: 20pt;
 	text-align: center;
 	color: rgb(50, 255, 255);
 	animation: current-text-neon-animation 1.5s infinite alternate;
@@ -189,8 +193,8 @@ body {
 .card img {
 	display: flex;
 	position: absolute;
-	width: 180px;
-	height: 260px;
+	width: 13vw;
+	height: 20vw;
 }
 
 .card-description {
@@ -198,20 +202,21 @@ body {
 	justify-content: center;
     align-items: center;
 	position: absolute;
-	width:180px;
-	height: 260px;
 	text-align: center;
 	color: rgb(50, 255, 255);
+	font-size: 16pt;
 	animation: current-neon-animation 1.5s infinite alternate,
 			   current-text-neon-animation 1.5s infinite alternate-reverse;
 }
 
 .card-name {
 	position: absolute;
-	bottom: 30px;
-	width: 200px;
-	bottom: -55px;
-	font-size: 16pt;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	width: 13vw;
+	bottom: -10vh;
+	font-size: 20pt;
 	text-align: center;
 	color: rgb(50, 255, 255);
 	animation: current-text-neon-animation 1.5s infinite alternate;
@@ -220,33 +225,95 @@ body {
 #down {
 	position: fixed;
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
     align-items: center;
-	width: 200px;
-	height: 50px;
+	width: 40vw;
+	height: 8vw;
 	bottom: 7px;
-	font-family: Arial;
-	font-size: 16pt;
+	font-size: 18pt;
 	color: rgb(255, 255, 50);
 	animation: text-neon-animation 1.5s infinite alternate-reverse;
 }
 
-#down button {
-	position: fixed;
+#down div {
 	display: flex;
 	justify-content: center;
     align-items: center;
-	width: 200px;
-	height: 50px;
+	width: 20vw;
+	height: 5vw;
+	margin: 2vw;
 	color: rgb(255, 255, 50);
-	font-family: Arial;
-	font-size: 16pt;
-	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
 	backdrop-filter: blur(2px);
 	-webkit-backdrop-filter: blur(2px);
 	background-color: rgba(100, 100, 100, 0.3);
 	animation: neon-animation 1.5s infinite alternate,
 			   text-neon-animation 1.5s infinite alternate-reverse;
+}
+#down p {
+	text-align: center;
+	margin: 3px;
+}
+
+#details {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-25vw, -40vh);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 2px solid transparent;
+	animation: current-neon-animation 1.5s infinite alternate-reverse;
+}
+
+.details {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	margin: 1vh;
+}
+
+.details img {
+	width: 10vw;
+	height: 10vw;
+}
+
+.details p {
+	text-align: center;
+	font-size: 16pt;
+	color: rgb(255, 255, 255);
+	animation: text-neon-animation 1.5s infinite alternate;
+}
+
+.details a {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	width: 12vw;
+	height: 3vw;
+	color: rgb(255, 255, 50);
+	text-decoration: none;
+	font-size: 16pt;
+	text-align: center;
+	border: 2px solid transparent;
+	background-color: rgba(100, 100, 100, 0.6);
+	animation: neon-animation 1.5s infinite alternate,
+			   text-neon-animation 1.5s infinite alternate-reverse;
+}
+
+#details.hidden {
+	display: none;
+}
+
+#toggle-details.hidden {
+	display: none;
 }
 
 
@@ -262,6 +329,19 @@ body {
 	animation: current-text-neon-animation 1s infinite alternate;
 }
 
+#askquestion p {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	padding: 1vw;
+	border: 2px solid transparent;
+	border-color: rgb(255, 255, 50);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	animation: current-neon-animation 1s infinite alternate,
+			   current-text-neon-animation 1s infinite alternate;
+}
+
 #ball img{
 	width: 400px;
 	height: 400px;
@@ -271,61 +351,15 @@ body {
 	animation: shake 1s;
 }
 
-
-/* about.html */
-
-#about-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-    align-items: center;
-}
-
-#about {
-	justify-content: center;
-    align-items: center;
-	position: absolute;
-	top: 300px;
-	color: rgb(50, 255, 255);
-	animation: current-text-neon-animation 1.5s infinite alternate;
-}
-
-#about-logo {
-	position: absolute;
-	top: 100px;
-}
-
-#about-logo img{
-	width: 125px;
-	height: 125px;
-}
-
-.about {
+#fortune {
 	display: flex;
 	justify-content: center;
-    align-items: center;
-	margin: 20px;
-}
-
-.about a{
-	position: absolute;
-	display: flex;
-	justify-content: center;
-    align-items: center;
-	position: absolute;
-	width: 200px;
-	height: 50px;
-	top: 200px;
-	color: rgb(255, 255, 50);
-	text-decoration: none;
-	font-size: 16pt;
+	align-items: center;
 	text-align: center;
-	backdrop-filter: blur(2px);
-	-webkit-backdrop-filter: blur(2px);
-	border: 2px solid transparent;
-	background-color: rgba(100, 100, 100, 0.3);
-	animation: neon-animation 1.5s infinite alternate,
-			   text-neon-animation 1.5s infinite alternate-reverse;
+}
+
+#fortune.hidden {
+	display: none;
 }
 
 
@@ -344,11 +378,11 @@ body {
 
 @keyframes current-neon-animation {
     0% {
-        border-color: rgba(255, 255, 50, 1);
+        border-color: rgba(50, 255, 255, 1);
 		box-shadow:  0 0 3px 3px rgba(50, 255, 255, 1);
     }
 	100% {
-        border-color: rgba(255, 255, 50, 0.7);
+        border-color: rgba(50, 255, 255, 0.7);
 		box-shadow:  0 0 3px 3px rgba(50, 255, 255, 0.5);
     }
 }

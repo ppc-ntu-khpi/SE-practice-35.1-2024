@@ -1,5 +1,5 @@
 const down = document.getElementById('down');
-const down_button = document.createElement('button');
+const down_button = document.getElementById('down-button');
 down.style.backgroundСolor = "rgba(100, 100, 100, 0.3)";
 if (device == "desktop") {
 	down_button.innerHTML = "<p>Отримати картку</p>";
@@ -9,13 +9,12 @@ if (device == "desktop") {
 		checkCards(thisCard);
 	}
 } else if (device == "phone") {
-	down_button.innerText = "Розпочати";
+	down_button.innerHTML = "<p>Розпочати</p>";
 	down_button.onclick = function() {
 		checkIOS();
 		down_button.onclick = function() {
 			return;
 		}
-		down_button.innerText = "Потрясіть телефон тричі";
+		down_button.innerHTML = "<p>Потрясіть телефон тричі</p>";
 	}
 }
-down.appendChild(down_button);
